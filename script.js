@@ -36,7 +36,7 @@ function playGame(humanChoice) {
     updateDisplays();
 
     roundNumberDisplay.textContent = roundNumber;
-
+    console.log("after update round");
     if (roundNumber >= 5) {
       endGame();
     } else {
@@ -82,12 +82,14 @@ function updateScore(winner) {
     humanScore++;
   } else if (winner === "computer") {
     computerScore++;
+  } else if (winner === "tie") {
   }
 }
 
 function updateDisplays() {
   humanScoreDisplay.textContent = humanScore;
   computerScoreDisplay.textContent = computerScore;
+  humanScoreDisplay.style = "color: red;";
 }
 
 function endGame() {
@@ -176,3 +178,36 @@ playGame();
 // }
 
 // playGame();
+
+/*
+
+// get html elements
+
+function resetGame(){
+  removeChildren(element1)
+  removeChildren(element2)
+  etc...
+}
+
+function renderGame(){
+  renderRoundCounter()
+  renderScoreBoard()
+  etc...
+}
+
+let gameStarted = false;
+let gamePaused = false;
+
+function update() {
+  if(gameStarted){
+    // game logic here
+  }
+
+  resetGame()
+  renderGame()
+}
+
+// start game
+update()
+
+*/

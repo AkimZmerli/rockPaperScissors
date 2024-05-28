@@ -12,15 +12,27 @@
     />
     <link rel="stylesheet" href="main.css" />
   </head>
-  <body>
-    <div class="Button-Group">
-      <button type="button" class="btn btn-warning" id="btnI">Rock</button>
-      <button type="button" class="btn btn-success" id="btnII">Paper</button>
-      <button type="button" class="btn btn-info" id="btnIII">Scissors</button>
-      <div class="roundTable">Round: <span id="roundNumber">1</span></div>
+  <body style="height: 100vh; width: 100vw">
+    <div
+      class="alltogether"
+      style="
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      "
+    >
+      <div>
+        <button type="button" class="btn btn-warning" id="btnI">Rock</button>
+        <button type="button" class="btn btn-success" id="btnII">Paper</button>
+        <button type="button" class="btn btn-info" id="btnIII">Scissors</button>
+        <div class="roundTable">Round: <span id="roundNumber">1</span></div>
+      </div>
       <div class="gameTable">
-        Your Score: <span id="yourScore">0</span> | Opponent Score:
-        <span id="opponentScore">0</span>
+        Your Score: <span id="humanScore">0</span> | Opponent Score:
+        <span id="computerScore">0</span>
       </div>
       <div id="choiceDisplay"></div>
     </div>
