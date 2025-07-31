@@ -13,7 +13,7 @@
 
 ## 🚀 Live Demo
 
-[Play the Game](https://akimzmerli.github.io/rockPaperScissors/) *(if hosted on GitHub Pages)*
+[Play the Game](https://akimzmerli.github.io/rockPaperScissors/)
 
 ## 📖 The Story Behind This Project
 
